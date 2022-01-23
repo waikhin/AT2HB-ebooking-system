@@ -1,0 +1,70 @@
+.operator{
+    display: flex;
+    margin:0 0 1em 2.5em;
+    align-items: baseline;
+}
+
+.operator .week-ctrl{
+    margin-top: 0.5em;
+    margin-left: 2em;
+    
+}
+
+.court-filter{
+    position: relative;
+    float: right;
+}
+
+.court-filter select{
+    width: 200px;
+    border: 1.5px solid #6c757d;
+    border-radius: 5px;
+}
+
+.operator .court-print button{
+
+    height: 30px;
+    margin-left: 2em;
+    border: 1.5px solid #6c757d;
+    border-radius: 5px;
+}
+
+/* for the calendar */
+.slot{
+    width: 95%;
+    margin-left: 2em;
+    
+}
+
+table thead tr{
+    background-color: #b6b3b3;
+}
+
+.slot tr td:first-child{
+    background-color: #cbced1;
+    width: 100px;
+}
+
+.slot{
+
+    border-collapse:collapse;
+    text-align: center;
+}
+  
+.slot td{
+    padding:0px;
+}
+
+.slot label{
+    display:block;
+    height: 20px;
+}
+
+.cancelled tbody tr td:last-child{
+    color: #dc3545!important;
+}
+
+.booked{
+    width: 250px;
+    background-color: #b6b3b3;
+}

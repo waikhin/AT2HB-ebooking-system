@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif,monospace;
+}
+body{
+    background-color: #e5e5e5;
+    min-height: 100vh;
+}
+
+main{
+    display: block;
+    padding: 5em;
+}
+
+.card{
+    box-shadow: 3px 5px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.card-header,.card-body,.card-footer{
+    
+    border: 2px solid black;
+}
+
+.card-body,.card-footer{
+    border-top: none;
+}
+
+.card-body{
+    font-weight: 600;
+}
+
+.card-header{
+    background-color: #4e4e4e;
+    padding: 0.3em;
+    color: white;
+    text-align: center;
+}
+
+.card-footer{
+    display: flex;
+    justify-content:flex-end;
+    background-color: #949494;
+}
+
+.card-footer button{
+    margin-left: 2em;
+}
+
+.Cancelled,.Rejected{
+    color: #dc3545;
+}
+
+.Pending{
+    color: #ffc107;
+}
+
+.Verified,.Approved{
+    color:#28a745;
+}
+
+.card-popup {
+    display: none;
+    background-color: #e5e5e5;
+    position: fixed;
+    z-index: 9;
+    width: 90%;
+}
+
+.card-popup table{
+    width: 100%;
+}
+.card-body.fail {
+    width: 100%;
+    height: 100%;
+    border: 5px solid #e7e7e7;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: black;
+    outline: none;
+    transition: .3s;
+}
+.pass.fail small, small.error
+{
+    color: crimson;
+    visibility: visible;
+    animation: shake 0.8s;
+    animation-iteration-count: 1;
+}
+
+.pass.success small, small.success
+{
+    color: green;
+    visibility: visible;
+    animation: shake 0.8s;
+    animation-iteration-count: 1;
+}
+.card-body small
+{
+    float: left;
+    margin-left: 5%;
+    font-size: small;
+    visibility: hidden;
+}
+.card-body-pass {
+    display: none;
+    background-color: #e5e5e5;
+    position: fixed;
+    z-index: 9;
+    width: 500px;
+    min-height: 400px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    padding: 40px 30px;
+    margin-left: 30%;
+    margin-bottom: 100px;
+}
+
+.card-body-pass .card-body .pass label{
+    width: 100%;
+    height: 100%;
+    margin-left: 20px;
+}
+.card-body-pass .card-body .pass input{
+    width: 100%;
+    height: 100%;
+    border: 2px solid gray;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    background: transparent;
+    outline: none;
+    transition: .3s;
+}
+.card-body-pass .card-body .pass select{
+    width: 100%;
+    height: 100%;
+    border: 2px solid gray;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    background: transparent;
+    outline: none;
+    transition: .3s;
+}
+@keyframes shake
+{
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+}

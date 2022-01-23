@@ -1,0 +1,18 @@
+.card-popup .card{ 
+    position: fixed;
+    z-index: 11;
+    width: 90%;
+    margin-left: 2em;
+}
+
+.Cancelled,.Rejected{
+    color: #dc3545;
+}
+
+.Pending{
+    color: #ffc107;
+}
+
+.Verified,.Approved{
+    color:#28a745;
+}

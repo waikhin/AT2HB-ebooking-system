@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+main{
+    background-color: #cbced1;
+    font-family: inherit;
+    min-height:100%;
+}
+
+.card{
+    width: 800px;
+    left: -50px;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+#msform fieldset .form-card {
+    background: white;
+    border: 0 none;
+    border-radius: 0px;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+    padding: 20px 40px 30px 40px;
+    box-sizing: border-box;
+    width: 94%;
+    margin: 0 3% 20px 3%;
+    position: relative
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative;
+
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none
+}
+
+#msform fieldset .form-card {
+    text-align: left;
+    color: #000000;
+    font-weight: 700;
+    
+}
+
+#msform fieldset table{
+    margin: 0 1em 0 1em;
+
+}
+
+#msform fieldset table thead tr{
+    background-color: #b6b3b3;
+}
+
+#msform .input-group small.fail
+{
+    color: crimson;
+    visibility: visible;
+    animation: shake 0.8s;
+    animation-iteration-count: 1;
+}
+
+#msform .input-group small.success 
+{
+    color: green;
+    visibility: visible;
+    animation: shake 0.8s;
+    animation-iteration-count: 1;
+}
+#msform .input-group small
+{
+    font-size: small;
+    font-weight: bold;
+    margin-left: 35%;
+    
+}
+
+.slot tr td:first-child{
+    background-color: #cbced1;
+}
+
+#msform fieldset .slot{
+
+    border-collapse:collapse;
+    text-align: center;
+}
+  
+#msform fieldset .slot td{
+    padding:0px;
+}
+
+#msform fieldset .slot label{
+    display:block;
+    height: 20px;
+}
+
+#msform fieldset .slot input{
+    opacity: 0;
+}
+
+#msform fieldset .booked,.red{
+    background-color: #dc3545;
+}
+
+#msform fieldset .pending,.yellow{
+    background-color: #ffc107;
+}
+
+.green{
+    background-color:#28a745;
+}
+
+.indicator{
+    display: flex;
+    width: 400px;
+    margin: 0.2em 0 0 15em !important;
+    justify-content: space-around;
+    font-weight: lighter;
+    color: #616161;
+}
+
+.box {
+    height: 1em;
+    width: 1.5em;
+    margin-top: 0.3em;
+    border: 1px solid black;
+    border-radius: 2px;
+    clear: both;
+  }
+  
+#msform input,
+#msform textarea {
+    padding: 0px 8px 4px 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    font-size: 16px;
+    letter-spacing: 1px
+}
+
+#msform input:focus,
+#msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: none;
+    font-weight: bold;
+    border-bottom: 2px solid #ff0063;
+    outline-width: 0
+}
+
+#msform .big{
+   text-transform:uppercase !important;
+   font-weight: 900px;
+}
+
+#msform .action-button {
+    width: 100px;
+    background: #ff0063;
+    font: inherit;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px
+}
+
+#msform .tc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.2em;
+}
+#msform .tc input,#msform .tc label{
+    margin:0;
+}
+
+#msform .tc input{
+    width: 10%; 
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #ff0063
+}
+
+#msform .action-button-previous {
+    width: 100px;
+    background: #444444;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #616161
+}
+
+.card {
+    z-index: 0;
+    border: none;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.fs-title {
+    font-size: 25px;
+    color: #2C3E50;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey
+}
+
+#progressbar .active {
+    color: #000000
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 12px;
+    width: 25%;
+    float: left;
+    position: relative
+}
+
+#progressbar #date:before {
+    font-family: FontAwesome;
+    content: "\f073"
+}
+
+#progressbar #contact:before {
+    font-family: FontAwesome;
+    content: "\f007"
+}
+
+#progressbar #confirmation:before {
+    font-family: FontAwesome;
+    content: "\f15c"
+}
+
+#progressbar #finish:before {
+    font-family: FontAwesome;
+    content: "\f00c"
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 18px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #ff0063
+}
+
+.radio-group {
+    position: relative;
+    margin-bottom: 25px
+}
+
+.radio {
+    display: inline-block;
+    width: 204;
+    height: 104;
+    border-radius: 0;
+    background: #ff0063;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 8px 2px
+}
+
+.radio:hover {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3)
+}
+
+.radio.selected {
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1)
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
+
+@keyframes shake
+{
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+}

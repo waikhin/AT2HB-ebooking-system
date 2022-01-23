@@ -1,0 +1,11 @@
+.table tbody tr td:last-child{
+
+}
+
+.approved tbody tr td:last-child{
+    color: #28a745!important;
+}
+
+.rejected tbody tr td:last-child{
+    color: #dc3545!important;
+}
